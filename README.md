@@ -133,7 +133,7 @@ Permitir a los clientes registrar pedidos con uno o más productos, consultar el
 ## 🧑‍💻 Autores
 
 **Soto Juan Ignacio · Navarro Angel · Molina Santiago**  
-📚 Ingeniería en Sistemas — UTN  
-📅 Año: 2025  
-🧩 Trabajo Práctico — Desarrollo de Software
+ Ingeniería en Sistemas — UTN  
+ Año: 2025  
+ Trabajo Práctico — Desarrollo de Software
 
