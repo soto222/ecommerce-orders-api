@@ -15,7 +15,9 @@ Permitir a los clientes registrar pedidos con uno o más productos, consultar el
 1. Clonar el repositorio:
 
    ```bash
-   git clone https://github.com/tu-usuario/tu-repo.git
+   git clone https://github.com/soto222/ecommerce-orders-api.git
+   cd ecommerce-orders-api
+
    cd tu-repo
    ```
 
@@ -130,6 +132,8 @@ Permitir a los clientes registrar pedidos con uno o más productos, consultar el
 
 ## 🧑‍💻 Autores
 
-**Soto Juan Ignacio-Navarro Angel-Molina Santiago**  
-Ingeniería en Sistemas — UTN — 2025  
-Trabajo Practico — Desarrollo de Software
+**Soto Juan Ignacio · Navarro Angel · Molina Santiago**  
+📚 Ingeniería en Sistemas — UTN  
+📅 Año: 2025  
+🧩 Trabajo Práctico — Desarrollo de Software
+
