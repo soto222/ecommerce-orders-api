@@ -14,7 +14,7 @@ namespace EcommerceOrdersApi.Models
         public Guid OrderId { get; set; }
 
         [ForeignKey("OrderId")]
-        [JsonIgnore] // ← Este evita el ciclo
+        [JsonIgnore] 
         public Order Order { get; set; }
 
         [Required]
