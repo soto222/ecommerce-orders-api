@@ -134,5 +134,5 @@ Cambia el estado a: `Pending`, `Shipped`, `Delivered` o `Cancelled`.
 Soto Juan Ignacio · Navarro Valdiviezo Angel Ezequiel · Molina Santiago Jesus  
 Ingeniería en Sistemas de Información — UTN-FRT   
 Trabajo Práctico — Desarrollo de Software
-Comisión 3KA01 — Grupo N°9
-Año: 2025 
+Comisión 3KA01 — Grupo N°9 
+— Año: 2025 
