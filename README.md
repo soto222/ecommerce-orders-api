@@ -1,24 +1,22 @@
-# 📦 Módulo de Órdenes para E-commerce — ASP.NET Core Web API
+# Módulo de Órdenes para E-commerce — ASP.NET Core Web API
 
-Este proyecto implementa un módulo de gestión de órdenes de compra para una tienda online. Fue desarrollado como parte de un trabajo práctico utilizando **ASP.NET Core**, **Entity Framework Core** y una base de datos SQL relacional.
-
----
-
-## 🎯 Objetivo
-
-Permitir a los clientes registrar pedidos con uno o más productos, consultar el historial de órdenes, ver detalles y modificar el estado de cada orden a lo largo de su ciclo de vida (pendiente, enviado, entregado, cancelado).
+Este proyecto implementa un módulo de gestión de órdenes de compra para una tienda online. Fue desarrollado como parte de un trabajo práctico utilizando ASP.NET Core, Entity Framework Core y una base de datos SQL relacional.
 
 ---
 
-## 🚀 Cómo ejecutar el proyecto
+## Objetivo
+
+Permitir a los clientes registrar pedidos con uno o más productos, consultar el historial de órdenes, ver detalles y modificar el estado de cada orden a lo largo de su ciclo de vida (Pendiente, Enviado, Entregado, Cancelado).
+
+---
+
+## Cómo ejecutar el proyecto
 
 1. Clonar el repositorio:
 
    ```bash
    git clone https://github.com/soto222/ecommerce-orders-api.git
    cd ecommerce-orders-api
-
-   cd tu-repo
    ```
 
 2. Configurar la cadena de conexión en `appsettings.json`:
@@ -42,15 +40,16 @@ Permitir a los clientes registrar pedidos con uno o más productos, consultar el
    ```
 
 5. Acceder a la documentación Swagger en:
+
    ```
    http://localhost:5098/swagger
    ```
 
 ---
 
-## 📌 Endpoints Principales
+## Endpoints principales
 
-### 🔹 Crear una orden
+### Crear una orden
 
 **POST** `/api/Orders`
 
@@ -69,32 +68,32 @@ Permitir a los clientes registrar pedidos con uno o más productos, consultar el
 }
 ```
 
-📥 Retorna la orden creada con ID y detalles.
+Retorna la orden creada con ID y detalles.
 
 ---
 
-### 🔹 Obtener todas las órdenes (paginadas y filtradas)
+### Obtener todas las órdenes (paginadas y filtradas)
 
 **GET** `/api/Orders?status=Pending&customerId={id}&pageNumber=1&pageSize=10`
 
-🔍 Parámetros disponibles:
+Parámetros disponibles:
 
-- `status`: Pending | Shipped | Delivered | Cancelled
+- `status`: Pending | Shipped | Delivered | Cancelled  
 - `customerId`: UUID del cliente
 
-📥 Devuelve lista de órdenes con productos incluidos.
+Devuelve lista de órdenes con productos incluidos.
 
 ---
 
-### 🔹 Obtener una orden por ID
+### Obtener una orden por ID
 
 **GET** `/api/Orders/{id}`
 
-📥 Devuelve todos los datos de la orden, incluyendo ítems, productos, totales, direcciones, etc.
+Devuelve todos los datos de la orden, incluyendo ítems, productos, totales, direcciones, etc.
 
 ---
 
-### 🔹 Cambiar estado de una orden
+### Cambiar estado de una orden
 
 **PUT** `/api/Orders/{id}/status`
 
@@ -104,36 +103,36 @@ Permitir a los clientes registrar pedidos con uno o más productos, consultar el
 }
 ```
 
-📤 Cambia el estado a: `Pending`, `Shipped`, `Delivered` o `Cancelled`.
+Cambia el estado a: `Pending`, `Shipped`, `Delivered` o `Cancelled`.
 
 ---
 
-## 🗃️ Base de Datos
+## Base de datos
 
-- Tabla `Orders` → almacena la orden general
-- Tabla `OrderItems` → ítems por orden
+- Tabla `Orders`: almacena la orden general  
+- Tabla `OrderItems`: ítems por orden  
 - Relaciones:
-  - `CustomerId` (FK a tabla Customers)
-  - `ProductId` (FK a tabla Products)
+  - `CustomerId` → clave foránea a `Customers`
+  - `ProductId` → clave foránea a `Products`
 
 ---
 
-## ✅ Estado de pruebas
+## Estado de pruebas
 
 | Funcionalidad       | Estado |
 | ------------------- | ------ |
-| Crear orden         | ✅ OK  |
-| Obtener todas       | ✅ OK  |
-| Obtener por ID      | ✅ OK  |
-| Cambiar estado      | ✅ OK  |
-| Filtrado por estado | ✅ OK  |
+| Crear orden         | OK     |
+| Obtener todas       | OK     |
+| Obtener por ID      | OK     |
+| Cambiar estado      | OK     |
+| Filtrado por estado | OK     |
 
 ---
 
-## 🧑‍💻 Autores
+## Autores
 
-**Soto Juan Ignacio · Navarro Angel · Molina Santiago**  
- Ingeniería en Sistemas — UTN  
- Año: 2025  
- Trabajo Práctico — Desarrollo de Software
+Soto Juan Ignacio · Navarro Angel · Molina Santiago  
+Ingeniería en Sistemas — UTN  
+Año: 2025  
+Trabajo Práctico — Desarrollo de Software
 
